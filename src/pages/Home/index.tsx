@@ -331,8 +331,8 @@ export function Home() {
             </ProjectDescription>
           </Project>
 
-          <Project>
-            <ImageProject>
+          <Project id="dif">
+            <ImageProject className="dif">
               <div className="img">
                 <img
                   src="https://s3-alpha-sig.figma.com/img/13a1/57f2/d0bfafa5cbd6a89dfe634a542f95ebd2?Expires=1696809600&Signature=bFuCIGytdVrzpOxIKkXtC1~WxB1KAUFcu8ktcY1zC1JVtqTt4j31Srgn4q-Yubq9~UfCvszqXxiu3jwlozKJ-ev7Qvd~orDV5NAo3ZTiaQbtPlCIzb4WuOPxYDKEvlDFe1pkXxIR-DYkOJNgSJnmOk5DgNxXlwX1r66Qp~6GVPCr80wyZVSlG3YJFbudOPVWfZDzJfbplMXSR5bzUYsLrJCF7yrJb3Z6p9giDGHGPUKFDZdHjBy5ic-k9MRe4y-Nh0HRFRKVwCG~vWU2Ez4-ivGHgoex1DpS5pqBpnpT~mQ-XNxgz5psnu0SApG93VsZAovOJ8V3gond39tBvUfZEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
@@ -341,7 +341,7 @@ export function Home() {
               </div>
             </ImageProject>
 
-            <ProjectDescription>
+            <ProjectDescription className="dif-one">
               <span>Skills</span>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

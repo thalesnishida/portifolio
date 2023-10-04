@@ -398,17 +398,48 @@ export const HomeProjects = styled.section`
   p {
     text-align: center;
   }
+
+  @media (min-width: 768px) {
+    padding: 4rem 3rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
 `
 
 export const HomeProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (min-width: 768px) {
+    > #dif {
+      flex-direction: row-reverse;
+    }
+  }
 `
 
 export const Project = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 1152px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    > .dif {
+      border-radius: 0 12px 12px 0;
+      order: 2;
+    }
+
+    > .dif-one {
+      border-radius: 12px 0 0 12px;
+    }
+  }
 `
 export const ImageProject = styled.div`
   padding: 2rem;
@@ -425,6 +456,16 @@ export const ImageProject = styled.div`
       border-radius: 12px;
     }
   }
+
+  @media (min-width: 768px) {
+    border-radius: 12px 0 0 12px;
+    padding: 3rem;
+
+    > .img {
+      display: flex;
+      align-items: center;
+    }
+  }
 `
 
 export const ProjectDescription = styled.div`
@@ -437,6 +478,8 @@ export const ProjectDescription = styled.div`
 
   > span {
     color: ${(props) => props.theme['gray-dark-900']};
+    font-weight: 600;
+    font-size: 1.125rem;
   }
 
   > p {
@@ -444,8 +487,22 @@ export const ProjectDescription = styled.div`
     text-align: justify;
   }
 
+  > a {
+    color: ${(props) => props.theme['gray-dark-600']};
+    display: contents;
+  }
+
+  > a:hover {
+    color: ${(props) => props.theme['gray-dark-800']};
+  }
+
   > svg:hover {
     cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    padding: 3rem;
+    border-radius: 0 12px 12px 0;
   }
 `
 
