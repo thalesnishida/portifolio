@@ -1,3 +1,5 @@
+import ClipboardJS from 'clipboard'
+
 import {
   HomeGreeting,
   HomeContainer,
@@ -19,10 +21,14 @@ import {
   ProjectDescription,
   Skill,
   SkillContent,
+  HomeContact,
+  Contact,
+  Links,
+  LinksIcons,
 } from './styles'
 
-import { HiMenu, HiOutlineLocationMarker } from 'react-icons/hi'
-import { BiLinkExternal } from 'react-icons/bi'
+import { HiMenu, HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
+import { BiLinkExternal, BiCopy, BiPhone } from 'react-icons/bi'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
 import { GoDotFill } from 'react-icons/go'
 
@@ -40,6 +46,20 @@ import tailwind from '../../assets/icon-tailwindcss.svg'
 import tyscript from '../../assets/icon-typescript.svg'
 
 export function Home() {
+  const phoneNumber = '+55 15 992718000'
+
+  // Configurar ClipboardJS para copiar o texto quando o ícone BiCopy for clicado
+  const clipboard = new ClipboardJS('.copy-button', {
+    text: function () {
+      return phoneNumber
+    },
+  })
+
+  clipboard.on('success', function (e) {
+    console.log('Texto copiado:', e.text)
+    // Você pode adicionar feedback ou ações adicionais aqui, se necessário
+  })
+
   return (
     <HomeContainer>
       <HomeHeader>
@@ -49,13 +69,16 @@ export function Home() {
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="#">Work</a>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -111,7 +134,7 @@ export function Home() {
         </div>
       </HomeGreeting>
 
-      <HomeAbout>
+      <HomeAbout id="about">
         <span>about me</span>
         <HomeAboutContainer>
           <HomeAboutPhoto>
@@ -217,7 +240,7 @@ export function Home() {
         </HomeSkillsIcons>
       </HomeSkills>
 
-      <HomeExperience>
+      <HomeExperience id="work">
         <span>Experience</span>
         <p>Here is a quick summary of my most recent experiences:</p>
 
@@ -290,7 +313,7 @@ export function Home() {
         </HomeExperienceContent>
       </HomeExperience>
 
-      <HomeProjects>
+      <HomeProjects id="projects">
         <span>Work</span>
         <p>Some of the noteworthy projects I have built:</p>
 
@@ -368,6 +391,38 @@ export function Home() {
           </Project>
         </HomeProjectsContainer>
       </HomeProjects>
+
+      <HomeContact id="contact">
+        <span>Contato</span>
+        <p>
+          What next? Feel free to reach out to me if you are looking for a
+          developer, have a query, or simply want to connect.
+        </p>
+
+        <Contact>
+          <HiOutlineMail size={24} />
+          <a href="">
+            <strong id="target">medeiros.tn@gmail.com</strong>
+          </a>
+          <BiCopy size={24} data-clipboard-target="#target" className="copy" />
+        </Contact>
+
+        <Contact>
+          <BiPhone size={24} />
+          <a href="">
+            <strong>+55 15 992718000</strong>
+          </a>
+          <BiCopy size={24} className="copy" />
+        </Contact>
+
+        <Links>
+          <span>You may also find me on these platforms!</span>
+          <LinksIcons>
+            <FiGithub size={24} />
+            <FiLinkedin size={24} />
+          </LinksIcons>
+        </Links>
+      </HomeContact>
     </HomeContainer>
   )
 }
