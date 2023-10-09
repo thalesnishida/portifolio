@@ -315,6 +315,8 @@ export const HomeExperience = styled.section`
   gap: 1rem;
   padding: 4rem 1rem;
 
+  margin: 0 auto;
+
   background: ${(props) => props.theme['gray-dark-50']};
 
   > span {
@@ -366,15 +368,24 @@ export const Experience = styled.div`
   }
 
   @media (min-width: 1024px) {
-    flex-direction: row;
     padding: 2rem;
-    gap: 6rem;
 
     .d {
-      gap: 5rem;
       display: flex;
       flex-direction: row-reverse;
+      gap: 1rem;
+
+      > span {
+        min-width: max-content;
+      }
     }
+  }
+
+  @media (min-width: 1120px) {
+    flex-direction: row;
+    gap: 3rem;
+
+    max-width: 75rem;
   }
 `
 
@@ -413,7 +424,23 @@ export const HomeProjectsContainer = styled.div`
 
   @media (min-width: 768px) {
     > #dif {
-      flex-direction: row-reverse;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    > #dif {
+      display: grid;
+      //grid-template-rows: 1fr 1fr;
+
+      > .dif {
+        border-radius: 0 12px 12px 0;
+      }
+
+      > .dif-one {
+        border-radius: 12px 0 0 12px;
+      }
     }
   }
 `
@@ -423,22 +450,15 @@ export const Project = styled.div`
   flex-direction: column;
 
   @media (min-width: 768px) {
-    flex-direction: row;
-  }
-
-  @media (min-width: 768px) {
     max-width: 1152px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
     > .dif {
-      border-radius: 0 12px 12px 0;
       order: 2;
     }
+  }
 
-    > .dif-one {
-      border-radius: 12px 0 0 12px;
-    }
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 `
 export const ImageProject = styled.div`
@@ -450,20 +470,32 @@ export const ImageProject = styled.div`
     width: 100%;
     height: 100%;
 
-    > img {
-      width: inherit;
+    img {
       object-fit: cover;
+      width: inherit;
       border-radius: 12px;
     }
   }
 
   @media (min-width: 768px) {
-    border-radius: 12px 0 0 12px;
     padding: 3rem;
 
     > .img {
       display: flex;
       align-items: center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    border-radius: 12px 0 0 12px;
+  }
+
+  @media (min-width: 1440px) {
+    > .img {
+      img {
+        height: -webkit-fill-available;
+        object-position: left;
+      }
     }
   }
 `
@@ -496,12 +528,28 @@ export const ProjectDescription = styled.div`
     color: ${(props) => props.theme['gray-dark-800']};
   }
 
-  > svg:hover {
-    cursor: pointer;
+  > .access-project {
+    display: flex;
+    gap: 1rem;
+
+    > svg:hover {
+      color: ${(props) => props.theme.emerald};
+      cursor: pointer;
+    }
+
+    > .icon-git {
+      svg:hover {
+        color: ${(props) => props.theme.emerald};
+      }
+    }
   }
 
   @media (min-width: 768px) {
     padding: 3rem;
+    //border-radius: 0 12px 12px 0;
+  }
+
+  @media (min-width: 1024px) {
     border-radius: 0 12px 12px 0;
   }
 `

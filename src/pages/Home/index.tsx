@@ -34,6 +34,7 @@ import { GoDotFill } from 'react-icons/go'
 
 import profile from '../../assets/profile.jpg'
 import photo from '../../assets/photo-profile.jpg'
+import rocketMovies from '../../assets/rocket-movies2.png'
 
 import react from '../../assets/icon-react.svg'
 import express from '../../assets/icon-express.svg'
@@ -91,14 +92,14 @@ export function Home() {
 
         <div className="description">
           <div className="about">
-            <h1>Hi, I’m Thales Nishida 👋</h1>
+            <h1>Olá, eu sou Thales Nishida. 👋</h1>
 
             <p>
-              I m a full stack developer (React.js & Node.js) with a focus on
-              creating (and occasionally designing) exceptional digital
-              experiences that are fast, accessible, visually appealing, and
-              responsive. Even though I have been creating web applications for
-              over 7 years, I still love it as if it was something new.
+              Sou um desenvolvedor full stack, com foco em criar (e
+              ocasionalmente em design) experiências digitais excepcionais que
+              sejam rápidas, acessíveis, visualmente atraentes e responsivas.
+              Tenho paixão por desenvolver aplicações web e estou comprometido
+              em oferecer resultados de alta qualidade.
             </p>
           </div>
 
@@ -110,7 +111,7 @@ export function Home() {
 
             <div className="location-available">
               <GoDotFill size={24} />
-              <span>Avalible for new projects</span>
+              <span>Disponível para novos projetos.</span>
             </div>
           </div>
 
@@ -147,41 +148,43 @@ export function Home() {
             <h2>Curious about me? Here you have it:</h2>
 
             <p>
-              I m a passionate, self-proclaimed designer who specializes in full
-              stack development (React.js & Node.js). I am very enthusiastic
-              about bringing the technical and visual aspects of digital
-              products to life. User experience, pixel perfect design, and
-              writing clear, readable, highly performant code matters to me.
+              Sou um designer apaixonado, autodenominado, especializado em
+              desenvolvimento full stack (React.js e Node.js). Tenho grande
+              entusiasmo em dar vida aos aspectos técnicos e visuais de produtos
+              digitais. A experiência do usuário, o design perfeito em pixel e
+              escrever código claro, legível e altamente performante são
+              importantes para mim.
             </p>
 
             <p>
-              I began my journey as a web developer in 2015, and since then, Ive
-              continued to grow and evolve as a developer, taking on new
-              challenges and learning the latest technologies along the way.
-              Now, in my early thirties, 7 years after starting my web
-              development journey, I m building cutting-edge web applications
-              using modern technologies such as Next.js, TypeScript, Nestjs,
-              Tailwindcss, Supabase and much more.
+              Comecei minha jornada como desenvolvedor web em 2021 e, desde
+              então, continuo a crescer e evoluir, assumindo novos desafios e
+              aprendendo as tecnologias mais recentes ao longo do caminho.
+              Agora, em meus trinta e poucos anos, estou construindo aplicações
+              web de ponta usando tecnologias modernas como Next.js, TypeScript,
+              Nestjs, Tailwindcss, Supabase e muito mais.
             </p>
 
             <p>
-              I am very much a progressive thinker and enjoy working on products
-              end to end, from ideation all the way to development.
+              Sou um pensador progressista e gosto de trabalhar em produtos do
+              início ao fim, desde a concepção até o desenvolvimento.
             </p>
 
             <p>
-              When I m not in full-on developer mode, you can find me hovering
-              around on twitter or on indie hacker, witnessing the journey of
-              early startups or enjoying some free time. You can follow me on
-              Twitter where I share tech-related bites and build in public, or
-              you can follow me on GitHub.
+              Quando não estou no modo desenvolvedor em tempo integral, você
+              pode me encontrar circulando pelo Twitter ou pelo Indie Hacker,
+              testemunhando a jornada de startups iniciantes ou aproveitando
+              algum tempo livre. Você pode me seguir no Twitter, onde
+              compartilho insights relacionados à tecnologia e trabalho de forma
+              pública, ou pode me acompanhar no GitHub.
             </p>
 
-            <p>Finally, some quick bits about me.</p>
+            <p>Finalmente, algumas informações rápidas sobre mim.</p>
 
             <p>
-              One last thing, I m available for freelance work, so feel free to
-              reach out and say hello! I promise I dont bite 😉
+              Uma última coisa, estou disponível para trabalhos freelance, então
+              sinta-se à vontade para entrar em contato e dizer olá! Eu prometo
+              que não mordo. 😉
             </p>
           </HomeAboutDescription>
         </HomeAboutContainer>
@@ -241,70 +244,32 @@ export function Home() {
       </HomeSkills>
 
       <HomeExperience id="work">
-        <span>Experience</span>
-        <p>Here is a quick summary of my most recent experiences:</p>
+        <span>Experiencias</span>
+        <p>Aqui está um resumo rápido das minhas experiências mais recentes:</p>
 
         <HomeExperienceContent>
           <Experience>
-            <h2>UpWork</h2>
+            <h2>Kansha Consultoria</h2>
 
             <div className="d">
-              <span>Nov 2021 - Present</span>
+              <span>Junho 2023 - Outubro 2023</span>
               <div>
-                <strong>Sr. Frontend Developer</strong>
+                <strong>Freelance Desenvolvedor FrontEnd</strong>
                 <ul>
                   <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Criei interfaces de usuário interativas e visualmente
+                    atraentes para sites e aplicativos web como freelancer.
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Colaborei de perto com clientes e designers independentes
+                    para transformar conceitos de design em código funcional e
+                    entregar uma experiência do usuário coesa.
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Experience>
-
-          <Experience>
-            <h2>UpWork</h2>
-
-            <div className="d">
-              <span>Nov 2021 - Present</span>
-              <div>
-                <strong>Sr. Frontend Developer</strong>
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </Experience>
-
-          <Experience>
-            <h2>UpWork</h2>
-
-            <div className="d">
-              <span>Nov 2021 - Present</span>
-              <div>
-                <strong>Sr. Frontend Developer</strong>
-                <ul>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fui encarregado de otimizar o desempenho e a responsividade
+                    dos projetos, garantindo que funcionassem perfeitamente em
+                    diferentes navegadores e dispositivos enquanto trabalhava
+                    como freelancer.
                   </li>
                 </ul>
               </div>
@@ -314,27 +279,33 @@ export function Home() {
       </HomeExperience>
 
       <HomeProjects id="projects">
-        <span>Work</span>
-        <p>Some of the noteworthy projects I have built:</p>
+        <span>Projetos</span>
+        <p>Alguns dos projetos notáveis que construí:</p>
 
         <HomeProjectsContainer>
           <Project>
             <ImageProject>
               <div className="img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/13a1/57f2/d0bfafa5cbd6a89dfe634a542f95ebd2?Expires=1696809600&Signature=bFuCIGytdVrzpOxIKkXtC1~WxB1KAUFcu8ktcY1zC1JVtqTt4j31Srgn4q-Yubq9~UfCvszqXxiu3jwlozKJ-ev7Qvd~orDV5NAo3ZTiaQbtPlCIzb4WuOPxYDKEvlDFe1pkXxIR-DYkOJNgSJnmOk5DgNxXlwX1r66Qp~6GVPCr80wyZVSlG3YJFbudOPVWfZDzJfbplMXSR5bzUYsLrJCF7yrJb3Z6p9giDGHGPUKFDZdHjBy5ic-k9MRe4y-Nh0HRFRKVwCG~vWU2Ez4-ivGHgoex1DpS5pqBpnpT~mQ-XNxgz5psnu0SApG93VsZAovOJ8V3gond39tBvUfZEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt=""
-                />
+                <img src={rocketMovies} alt="" />
               </div>
             </ImageProject>
 
             <ProjectDescription>
-              <span>Skills</span>
+              <span>RocketMovies</span>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae.
+                Desenvolvi uma aplicação full-stack que oferece aos usuários a
+                capacidade de criar uma conta personalizada, fazer login e
+                registrar notas de filmes que assistiram. A aplicação permite
+                que os usuários atribuam classificações de 0 a 5 a cada filme,
+                ajudando-os a manter um registro de suas preferências e
+                experiências cinematográficas. Além disso, os usuários podem
+                adicionar detalhes sobre os filmes, como título, diretor e
+                gênero, tornando mais fácil organizar e revisitar suas seleções
+                de filmes favoritos. Este projeto demonstra minhas habilidades
+                tanto no desenvolvimento frontend quanto no backend, bem como na
+                integração de recursos de autenticação e armazenamento de dados
+                para criar uma experiência completa e personalizada para os
+                usuários.
               </p>
               <SkillContent>
                 <Skill>react</Skill>
@@ -344,23 +315,30 @@ export function Home() {
                 <Skill>javascript</Skill>
               </SkillContent>
 
-              <a
-                href="https://www.google.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BiLinkExternal size={24} />
-              </a>
+              <div className="access-project">
+                <a
+                  href="https://rocketmovies93.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BiLinkExternal size={24} />
+                </a>
+                <a
+                  href="https://github.com/thalesnishida/rocketmovies"
+                  target="_blank"
+                  className="icon-git"
+                  rel="noreferrer"
+                >
+                  <FiGithub size={24} />
+                </a>
+              </div>
             </ProjectDescription>
           </Project>
 
           <Project id="dif">
             <ImageProject className="dif">
               <div className="img">
-                <img
-                  src="https://s3-alpha-sig.figma.com/img/13a1/57f2/d0bfafa5cbd6a89dfe634a542f95ebd2?Expires=1696809600&Signature=bFuCIGytdVrzpOxIKkXtC1~WxB1KAUFcu8ktcY1zC1JVtqTt4j31Srgn4q-Yubq9~UfCvszqXxiu3jwlozKJ-ev7Qvd~orDV5NAo3ZTiaQbtPlCIzb4WuOPxYDKEvlDFe1pkXxIR-DYkOJNgSJnmOk5DgNxXlwX1r66Qp~6GVPCr80wyZVSlG3YJFbudOPVWfZDzJfbplMXSR5bzUYsLrJCF7yrJb3Z6p9giDGHGPUKFDZdHjBy5ic-k9MRe4y-Nh0HRFRKVwCG~vWU2Ez4-ivGHgoex1DpS5pqBpnpT~mQ-XNxgz5psnu0SApG93VsZAovOJ8V3gond39tBvUfZEw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-                  alt=""
-                />
+                <img src={rocketMovies} alt="" />
               </div>
             </ImageProject>
 
@@ -395,8 +373,9 @@ export function Home() {
       <HomeContact id="contact">
         <span>Contato</span>
         <p>
-          What next? Feel free to reach out to me if you are looking for a
-          developer, have a query, or simply want to connect.
+          O que vem a seguir? Sinta-se à vontade para entrar em contato comigo
+          se estiver procurando um desenvolvedor, tiver uma pergunta ou
+          simplesmente quiser se conectar.
         </p>
 
         <Contact>
@@ -416,7 +395,7 @@ export function Home() {
         </Contact>
 
         <Links>
-          <span>You may also find me on these platforms!</span>
+          <span>Você também pode me encontrar nessas plataformas!</span>
           <LinksIcons>
             <FiGithub size={24} />
             <FiLinkedin size={24} />
