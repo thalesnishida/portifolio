@@ -1,3 +1,4 @@
+import { TextTitle } from '../../components/TextTitle'
 import {
   ExperienceContainer,
   ExperienceContent,
@@ -7,7 +8,7 @@ import {
 export function Experience() {
   return (
     <ExperienceContainer>
-      <span>Experiencias</span>
+      <TextTitle title="Experiencia" />
       <p>Aqui está um resumo rápido das minhas experiências mais recentes:</p>
 
       <ExperienceContent>

@@ -8,11 +8,12 @@ import {
   ContactLinks,
   ContactLinksIcons,
 } from './styles'
+import { TextTitle } from '../../components/TextTitle'
 
 export function Contact() {
   return (
     <ContactContainer>
-      <span>Contato</span>
+      <TextTitle title="Contato" />
       <p>
         O que vem a seguir? Sinta-se à vontade para entrar em contato comigo se
         estiver procurando um desenvolvedor, tiver uma pergunta ou simplesmente

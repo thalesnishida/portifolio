@@ -126,6 +126,7 @@ export const ProjectDescription = styled.div`
   > p {
     color: ${(props) => props.theme['gray-dark-600']};
     text-align: justify;
+    white-space: break-spaces;
   }
 
   > a {

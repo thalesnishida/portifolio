@@ -6,11 +6,12 @@ import {
 } from './styles'
 
 import photo from '../../assets/photo-profile.jpg'
+import { TextTitle } from '../../components/TextTitle'
 
 export function About() {
   return (
     <AboutContainer>
-      <span>about me</span>
+      <TextTitle title="Sobre mim" />
       <AboutContent>
         <AboutContentPhoto>
           <div className="photo-profile">
@@ -19,7 +20,7 @@ export function About() {
         </AboutContentPhoto>
 
         <AboutContentDescription>
-          <h2>Curious about me? Here you have it:</h2>
+          <h2>Curioso sobre mim? Aqui você tem:</h2>
 
           <p>
             Sou um designer apaixonado, autodenominado, especializado em

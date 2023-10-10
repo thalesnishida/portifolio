@@ -42,10 +42,3 @@ export const SkillsContainerIcons = styled.div`
     padding: 0 19rem;
   }
 `
-export const Icon = styled.div`
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`

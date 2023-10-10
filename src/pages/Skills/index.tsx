@@ -1,4 +1,4 @@
-import { SkillsContainer, SkillsContainerIcons, Icon } from './styles'
+import { SkillsContainer, SkillsContainerIcons } from './styles'
 
 import react from '../../assets/icon-react.svg'
 import express from '../../assets/icon-express.svg'
@@ -8,60 +8,28 @@ import nest from '../../assets/icon-nest.svg'
 import postegre from '../../assets/icon-postgresql.svg'
 import storybook from '../../assets/icon-storybook.svg'
 import tailwind from '../../assets/icon-tailwindcss.svg'
-import tyscript from '../../assets/icon-typescript.svg'
+import typescript from '../../assets/icon-typescript.svg'
+import { TextTitle } from '../../components/TextTitle'
+
+import { Icon } from '../../components/Icon'
 
 export function Skills() {
   return (
     <SkillsContainer>
-      <span>Skills</span>
+      <TextTitle title="Skills" />
 
       <p>The skills, tools and technologies I am really good at:</p>
 
       <SkillsContainerIcons>
-        <Icon>
-          <img src={javascript} alt="" />
-          <span>Javascript</span>
-        </Icon>
-
-        <Icon>
-          <img src={react} alt="" />
-          <span>React</span>
-        </Icon>
-
-        <Icon>
-          <img src={nest} alt="" />
-          <span>Nest</span>
-        </Icon>
-
-        <Icon>
-          <img src={tyscript} alt="" />
-          <span>Typescript</span>
-        </Icon>
-
-        <Icon>
-          <img src={express} alt="" />
-          <span>Express</span>
-        </Icon>
-
-        <Icon>
-          <img src={git} alt="" />
-          <span>Git</span>
-        </Icon>
-
-        <Icon>
-          <img src={postegre} alt="" />
-          <span>Postgre</span>
-        </Icon>
-
-        <Icon>
-          <img src={storybook} alt="" />
-          <span>Storybook</span>
-        </Icon>
-
-        <Icon>
-          <img src={tailwind} alt="" />
-          <span>Tailwind</span>
-        </Icon>
+        <Icon imgIcon={javascript} name="Javascript" />
+        <Icon imgIcon={react} name="React" />
+        <Icon imgIcon={nest} name="Nest" />
+        <Icon imgIcon={typescript} name="tyscript" />
+        <Icon imgIcon={express} name="Express" />
+        <Icon imgIcon={git} name="Git" />
+        <Icon imgIcon={postegre} name="Postegre" />
+        <Icon imgIcon={storybook} name="Storybook" />
+        <Icon imgIcon={tailwind} name="Tailwind" />
       </SkillsContainerIcons>
     </SkillsContainer>
   )

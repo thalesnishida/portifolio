@@ -12,11 +12,12 @@ import {
   ProjectSkillContent,
   ProjectSkill,
 } from './styles'
+import { TextTitle } from '../../components/TextTitle'
 
 export function Project() {
   return (
     <ProjectsContainer>
-      <span>Projetos</span>
+      <TextTitle title="Projetos" />
       <p>Alguns dos projetos notáveis que construí:</p>
 
       <ProjectsContent>
